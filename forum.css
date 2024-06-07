@@ -1,0 +1,277 @@
+/* Forum CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Área do cabeçalho */
+.header_section {
+  background-color: #23272a;
+  padding: 10px 0;
+}
+
+.navbar-brand img {
+  max-height: 50px;
+}
+
+.navbar-brand span {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #00aaff;
+}
+
+/* Botão do menu responsivo */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler .s-1,
+.navbar-toggler .s-2,
+.navbar-toggler .s-3 {
+  background-color: #fff;
+  display: block;
+  height: 2px;
+  margin: 4px 0;
+  width: 25px;
+}
+
+/* Área do conteúdo principal */
+.main_content {
+  padding: 20px 0;
+  background-color: #f8f9fa;
+}
+
+.post_container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Formulário de postagem */
+.add_post h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-icon {
+  border-radius: 50%;
+  margin-right: 10px;
+  max-height: 40px;
+}
+
+.username {
+  font-weight: 600;
+}
+
+textarea {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 50%;
+}
+
+.custom-file-upload {
+  border: none;
+  border-radius: 5px;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.custom-file-upload input[type="file"] {
+  display: none;
+}
+
+#selected-images img {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+/* Post */
+.post {
+  border-bottom: 1px solid #e9ecef;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.post-images img {
+  border-radius: 10px;
+  margin-bottom: 10px;
+  max-width: 25%;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.buttons button {
+  margin-right: 10px;
+}
+
+.btn {
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 5px 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-like.liked {
+  color: #e0245e;
+}
+
+.rating .star {
+  color: #ffcc00;
+  cursor: pointer;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.rating .star:hover {
+  color: #ff9900;
+}
+
+/* Seção de comentários */
+.comments-section {
+  margin-top: 20px;
+}
+
+.comment_form {
+  margin-bottom: 20px;
+}
+
+.comment_form textarea {
+  width: calc(100% - 50px);
+}
+
+.send-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.comment {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.comment-user-icon {
+  border-radius: 50%;
+  margin-right: 10px;
+  max-height: 30px;
+}
+
+.comment p {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.custom-file-upload {
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+#selected-images {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.selected-image-container {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.selected-image-container img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.remove-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  color: white;
+  padding: 2px 5px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.album {
+  position: relative;
+}
+
+.album:hover .selected-image-container {
+  display: block;
+}
+
+.album .selected-image-container {
+  display: none;
+}
+
+.album:hover .selected-image-container {
+  display: inline-block;
+}
+
+.btn-submit {
+  cursor: pointer;
+  color: black;
+  border: none;
+  background-color: transparent;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.btn-follow {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+  margin-left: 15px;
+  text-align: center;
+}
+
+.btn-follow.following {
+  color: green;
+  font-size: 24px;
+}
+
+.btn-follow.not-following {
+  color: gray;
+  font-size: 24px;
+}
