@@ -18,8 +18,7 @@ include 'Routes/head.php'
           <div class="col-md-6 ">
             <div class="detail_box">
               <h1>
-                Tudo sobre a<br>
-                Fauna de Teresópolis
+                Area do usuário
               </h1>
               <p>
                 Clicando ao lado temos temas sobre a fauna disponível na cidade de Teresópolis, com isso você pode ter um estudo sobre esse assunto antes de ir para algum lugar sem conhecimento
@@ -70,7 +69,8 @@ include 'Routes/head.php'
     </section>
     <!-- end slider section -->
   </div>
-
+<?php print_r($_SESSION);
+print_r($_POST)?>
 
   <!-- service section -->
   <section class="about_section layout_padding">

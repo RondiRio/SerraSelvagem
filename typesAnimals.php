@@ -58,7 +58,7 @@ $result = mysqli_query($conn, $sql);
                       <td><?php echo $row['nome_cientifico']; ?></td>
                       <td><?php echo $row['descricao']; ?></td>
                       <td><?php echo $row['habitos_alimentares']; ?></td>
-                      <td><?php echo $row['areas_habitat ']; ?></td>
+                      <td><?php echo $row['areas_habitat']; ?></td>
                       <td><?php echo $row['comportamento']; ?></td>
                       <td><?php echo $row['nome']; ?></td>
                     </tr>

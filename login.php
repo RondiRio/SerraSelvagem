@@ -30,11 +30,11 @@
 </head>
 <body>
 
-<?php include('head.php'); ?>
+<?php include('../SerraSelvagem/Routes/head.php'); ?>
 
 
 <div class="hero_area">
-    <?php include 'Routes/header.php' ?>
+    <?php include('../SerraSelvagem/Routes/header.php') ?>
 
     <section class="container login_section"> <!-- Adicionada classe "login_section" para estilização -->
         <div class="row">
@@ -55,7 +55,7 @@
                         <br>
                         <input type="submit" value="Entrar">
                     </form>
-                    <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a>.</p>
+                    <p>Não tem uma conta? <a href="cadastro.php">Cadastre-se</a>.</p>
                 </div>
             </div>
         </div>

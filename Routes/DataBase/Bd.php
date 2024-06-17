@@ -1,9 +1,9 @@
 <?php
 // Definir credenciais como constantes
 define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'u602544677_serraSelvagem');
-define('DB_PASSWORD', 'Serra123!@#');
-define('DB_DATABASE', 'u602544677_SerraSelvagem');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', '');
+define('DB_DATABASE', 'serraselvagem');
 
 // Conectar ao banco de dados
 $conn = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_DATABASE);

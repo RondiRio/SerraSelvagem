@@ -11,7 +11,7 @@ if($_POST['senha'] != $_POST['confirmar_senha']){
     header('Location: ../cadastro.php');
 }
 // Verifica se a senha está definida corretamente
-echo $password;
+// echo $password;
 
 // Exibe uma mensagem para confirmar que estamos fora da rotina de conexão
 echo 'fora da rotina';
@@ -28,7 +28,7 @@ if ($conn->connect_error) {
 $erroEmail = false;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nome = $_POST['nome_completo'];
+    $nome = $_POST['nome'];
     $email = $_POST["email"];
     $senha = $_POST['senha'];
 
@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $emailVerificaStmt->close();
 
     if (!$erroEmail) {
-        // Criptografar a senha antes de inseri-la no banco de dados
+        
         $senhaCriptografada = password_hash($senha, PASSWORD_DEFAULT);
 
         // Continuar com o processamento normal do cadastro
@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
        
     } else {
         // Erro ao cadastrar usuário
-        echo "Erro ao cadastrar usuário: " . $stmt->error;
+        echo "Erro ao cadastrar usuário: ";
     }
 
 }

@@ -1,6 +1,7 @@
 <?php
 include 'Routes/head.php';
-// print_r($_POST);
+print_r($_POST);
+print_r($_SESSION);
 ?>
 <!DOCTYPE html>
 <html>
