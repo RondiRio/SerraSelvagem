@@ -1,7 +1,8 @@
 <?php
 
 include 'Routes/head.php';
-session_start();
+var_dump(session_start());
+if(!session_start())
 
 if (!isset($_SESSION['loggedin'])) {
     // Sessão não está ativa, redirecione para a página de login

@@ -42,7 +42,7 @@ $stmt = $conn->prepare($query);
                 $_SESSION["usuario_logado"] = true;
                 $_SESSION["id"] = $id;
                 // Redirecionamento para radio.php
-                header("Location: ../index.php");
+                header("Location: ../areauser.php");
                 exit;
             } else {
                 echo "Senha fornecida pelo usuário: $senha <br>";

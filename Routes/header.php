@@ -1,5 +1,6 @@
 <?php
-    include('head.php');
+include('head.php');
+
 ?>
 <header class="header_section">
   <div class="container">
@@ -15,23 +16,32 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto text-color">
           <li class="nav-item active">
-            <a class="nav-link" href="index.php">Início <span class="sr-only">(current)</span></a>
+            <a class="nav-link text-color" href="index.php">Início <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.php"> About</a>
-          </li>
-           <li class="nav-item">
-            <a class="nav-link" href="typesAnimals.php"> Especies</a>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link" href="attack.php">Central de Ataques </a>
+            <a class="nav-link text-color" href="about.php"> Sobre</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="login.php">Login </a>
+            <a class="nav-link text-color" href="typesAnimals.php"> Especies</a>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-color" href="forum.php">Central de Ataques </a>
+          </li>
+          <li class="nav-item">
+            <?php if (!isset($_SESSION['id'])) { ?>
+              <a class="nav-link text-color" href="login.php">Entrar</a>
+            <?php } ?>
+          </li>
+          <li class="nav-item">
+            <?php if (isset($_SESSION['id'])) { ?>
+              <a class="nav-link text-color" href="logout.php">Sair</a>
+            <?php } ?>
+          </li>
+
+
         </ul>
       </div>
     </nav>
